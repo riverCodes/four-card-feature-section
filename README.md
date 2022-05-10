@@ -10,13 +10,9 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,22 +24,22 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-4-card-feature-section-using-css-grid-SJZo-iDIq](https://www.frontendmentor.io/solutions/responsive-4-card-feature-section-using-css-grid-SJZo-iDIq)
+- Live Site URL: [https://rivercodes.github.io/four-card-feature-section/](https://rivercodes.github.io/four-card-feature-section/)
 
 ## My process
+
+- I was unsure of whether to use Grid or Flexbox and so I first experimented and made a model of the layout on [CodePen](https://codepen.io/rivercodes/pen/OJQMKyv).
+- Once the layout was working on CodePen, I started working on the actual page, starting with the desktop design first. I was using grid, nested flexbox and flexbox properties to move the cards around. I did not really have a good reason for doing what I did, it just seemed right to me. I thought I was taking the right approach using Flexbox as I was more comfortable with it and Flexbox is better for flexible layouts without defined widths and heights right?
+- Well, it was not the best aproach as i realized later once I got to working on the mobile design. I forgot to take into account the sizing of all the components and thus everything began resizing in a very ugly way once I started messing around with screen sizes. My design was breaking and not dynamically responsive. My design was kinda working enough that I could've left it there. But I did not want to do that. It was frustrating me why my solution turned out so messy, even after prototyping it on CodePen.
+- I then got a timely notification that a user I follow on Frontend Mentor had submitted the same [@ArthurPog](https://www.frontendmentor.io/solutions/a-simple-mobile-first-approach-with-a-css-flex-and-grid-combo-BJsjCjrLc). His solution was so cool, using 3 breakpoints, and his code was very clean and effective. I was surprised at how simply he was able to swap the cards around using Grid. His solution also showed me how to achieve the top-border look that I was struggling with on the design.
+- So I then started researching and learning about Grid a little bit more. I spent a couple hours doing this and understanding Arthur's solution better. It was also my first time becoming familiar with nth-child selectors in CSS. Before this I was assigning unnecessary unique classes everywhere.
+- After all the preparation, I started anew on 90% of my CSS. I was using Grid mostly and Flexbox for the content inside the cards. Most importantly, I was more aware of where and why I was using Grid/Flexbox compared to last time, where I was applying them without a clear puropose.
+- Surprisingly, I was able to remake the complete design in an hour's time. I even managed to make a few modifications and optimizations of my own. I also commented my code properly for the first time. Seeing Arthur's dedication to maintaining his code and repository inspired me.
 
 ### Built with
 
@@ -52,59 +48,18 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [@ArthurPog's solution for this challenge](https://www.frontendmentor.io/solutions/a-simple-mobile-first-approach-with-a-css-flex-and-grid-combo-BJsjCjrLc) - I've already written about how much this solution helped me. This project was frustrating me and seeing this solution inspired and motivated me haha.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@riverCodes](https://www.frontendmentor.io/profile/riverCodes)
+- Discord - SharksDontBark#3123
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks @ArthurPog! Thanks Frontend Mentor
