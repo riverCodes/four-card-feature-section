@@ -130,6 +130,11 @@ h2 {
     max-width: 690px;
   }
 
+  .header {
+    display: grid;
+    place-items: center;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -137,6 +142,7 @@ h2 {
   .header p {
     max-width: 500px;
     font-size: 1.1rem;
+    text-align: center;
   }
 
   .features-container {
@@ -153,11 +159,6 @@ h2 {
 @media (min-width: 1200.1px) {
   main {
     max-width: 1380px;
-  }
-
-  .header {
-    display: grid;
-    place-items: center;
   }
 
   .features-container {
